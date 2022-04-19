@@ -1,4 +1,14 @@
 {
-  "bahasa": "english",
-  "mataUang": "Dolar"
+    "bahasa": "english",
+    "mataUang": "USD",
+    "metodeLaundry": [
+        "Reguler",
+        "Semi Quick",
+        "Quick",
+        "Express"
+    ],
+    "hargaLaundry": {
+        "USD": 0.42,
+        "Rupiah": 6000
+    }
 }

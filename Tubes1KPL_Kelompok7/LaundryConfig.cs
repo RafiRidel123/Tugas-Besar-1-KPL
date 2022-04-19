@@ -33,7 +33,9 @@ namespace Tubes1KPL_Kelompok7
 
         private void SetDefault()
         {
-            conf = new LaundryConfig("english", "Dolar");
+            harga hargaLaundry = new harga(0.42, 6000);
+            List<string> metodeLaundry = new List<string> { "Reguler", "Semi Quick", "Quick", "Express" };
+            conf = new LaundryConfig("english", "USD", hargaLaundry, metodeLaundry);
         }
 
         private void WriteNewConfigFile()
@@ -53,14 +55,31 @@ namespace Tubes1KPL_Kelompok7
     {
         public string bahasa { get; set; }
         public string mataUang { get; set; }
+        public harga hargaLaundry { get; set; }
+        public List<string> metodeLaundry { get; set; }
+        
 
         public LaundryConfig() { }
 
-        public LaundryConfig(string bahasa, string mataUang)
+        public LaundryConfig(string bahasa, string mataUang, harga hargaLaundry, List<string> metodeLaundry)
         {
             this.bahasa = bahasa;
             this.mataUang = mataUang;
+            this.metodeLaundry = metodeLaundry;
         }
+    }
+    public class harga
+    {
+        public double USD { get; set; }
+        public double Rupiah { get; set; }
+
+        public harga() { }
+        public harga(double USD, double Rupiah)
+        {
+            this.USD = USD;
+            this.Rupiah = Rupiah;
+        }
+
     }
 
 }
