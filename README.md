@@ -8,7 +8,7 @@ Tugas Besar 1
 - Runtime Configuration (Faza Alexander Riawan - 1302204062)
 
 Tugas Besar 2
-- Automata
+- Automata (Faza Alexander Riawan - 1302204062)
 - Table-driven construction
 - Parameterization/generics
 - Defensive programming/design by contract
